@@ -1,0 +1,73 @@
+{
+  "repo": "packet-mob-contacts-core",
+  "language": "Go",
+  "category": "Mobile workflows",
+  "goal": "Create a Go reference implementation for contacts workflows, centered on security rule linting, safe and unsafe fixtures, and remediation hints.",
+  "review_model": {
+    "terms": [
+      "form pressure",
+      "sync drift",
+      "local state",
+      "conflict cost"
+    ],
+    "lanes": [
+      "ship",
+      "watch",
+      "hold"
+    ],
+    "score": "signal * 2 + slack + confidence - drag * 3",
+    "purpose": "surface the domain-specific cases that need the most careful review"
+  },
+  "cases": [
+    {
+      "name": "baseline",
+      "focus": "form pressure",
+      "signal": 55,
+      "slack": 50,
+      "drag": 9,
+      "confidence": 45,
+      "score": 178,
+      "lane": "ship"
+    },
+    {
+      "name": "stress",
+      "focus": "sync drift",
+      "signal": 44,
+      "slack": 35,
+      "drag": 8,
+      "confidence": 45,
+      "score": 144,
+      "lane": "ship"
+    },
+    {
+      "name": "edge",
+      "focus": "local state",
+      "signal": 82,
+      "slack": 27,
+      "drag": 8,
+      "confidence": 70,
+      "score": 237,
+      "lane": "ship"
+    },
+    {
+      "name": "recovery",
+      "focus": "conflict cost",
+      "signal": 74,
+      "slack": 35,
+      "drag": 8,
+      "confidence": 51,
+      "score": 210,
+      "lane": "ship"
+    },
+    {
+      "name": "stale",
+      "focus": "form pressure",
+      "signal": 91,
+      "slack": 34,
+      "drag": 15,
+      "confidence": 46,
+      "score": 217,
+      "lane": "ship"
+    }
+  ]
+}

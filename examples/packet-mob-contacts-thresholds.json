@@ -1,0 +1,17 @@
+{
+  "repo": "packet-mob-contacts-core",
+  "thresholds": {
+    "signal": 4,
+    "slack": 2,
+    "confidence": 2,
+    "drag": 2,
+    "ship": 164,
+    "watch": 116
+  },
+  "terms": [
+    "form pressure",
+    "sync drift",
+    "local state",
+    "conflict cost"
+  ]
+}

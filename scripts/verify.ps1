@@ -61,3 +61,9 @@ foreach ($pathPattern in $knownPaths) {
 go test ./...
 
 powershell -NoProfile -ExecutionPolicy Bypass -File scripts/check-packet-mob-contacts-detail.ps1
+
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts/check-packet-mob-contacts-properties.ps1
+if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts/check-packet-mob-contacts-golden.ps1
+if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }

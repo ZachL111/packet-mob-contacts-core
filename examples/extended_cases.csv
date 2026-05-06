@@ -1,0 +1,7 @@
+name,demand,capacity,latency,risk,weight,score,decision,reason
+baseline,62,83,18,11,9,76,review,mobile workflows baseline scenario exercises the review path for bounded failure handling
+pressure,78,71,25,19,9,12,review,mobile workflows pressure scenario exercises the review path for bounded failure handling
+surge,98,92,22,12,12,140,review,mobile workflows surge scenario exercises the review path for bounded failure handling
+degraded,68,61,34,25,7,-100,review,mobile workflows degraded scenario exercises the review path for bounded failure handling
+recovery,85,105,19,13,9,126,review,mobile workflows recovery scenario exercises the review path for bounded failure handling
+boundary,77,84,22,16,8,54,review,mobile workflows boundary scenario exercises the review path for bounded failure handling
